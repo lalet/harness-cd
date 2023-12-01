@@ -1,2 +1,2 @@
 # harness-cd
-test
+ok
