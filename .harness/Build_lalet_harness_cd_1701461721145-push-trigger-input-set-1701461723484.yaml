@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_lalet_harness_cd_1701461721145-push-trigger-input-set
+  identifier: Build_lalet_harness_cd_1701461721145pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_lalet_harness_cd_1701461721145
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
