@@ -31,3 +31,24 @@ pipeline:
             spec: {}
             type: Cloud
         type: CI
+    - stage:
+        name: build-stage
+        identifier: buildstage
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: MacOS
+            arch: Arm64
+          runtime:
+            type: Docker
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Action
+                  name: run action
+                  identifier: run_action
+                  spec:
+                    uses: hello-world-action
