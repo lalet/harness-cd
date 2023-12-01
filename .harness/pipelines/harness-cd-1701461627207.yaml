@@ -51,4 +51,6 @@ pipeline:
                   name: run action
                   identifier: run_action
                   spec:
-                    uses: hello-world-action
+                    uses: actions/hello-world-docker-action@main
+                    with:
+                      who-to-greet: lalet
